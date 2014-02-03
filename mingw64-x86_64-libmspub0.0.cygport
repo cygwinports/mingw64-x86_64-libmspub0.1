@@ -1,0 +1,22 @@
+CROSS_HOST="x86_64-w64-mingw32"
+inherit cross
+
+NAME="mingw64-x86_64-libmspub0.0"
+VERSION=0.0.6
+RELEASE=1
+CATEGORY="Devel"
+SUMMARY="MS Publisher format library for Win64 toolchain"
+DESCRIPTION="Libmspub is library providing ability to interpret and import
+Microsoft Publisher content into various applications."
+HOMEPAGE="http://www.freedesktop.org/wiki/Software/libmspub/"
+SRC_URI="http://dev-www.libreoffice.org/src/libmspub-${VERSION}.tar.xz"
+SRC_DIR="libmspub-${VERSION}"
+
+CYGCONF_ARGS="--without-docs"
+
+src_install() {
+	cd ${B}
+	cyginstall bin_PROGRAMS=
+}
+
+KEEP_LA_FILES="none"
