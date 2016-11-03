@@ -3,7 +3,7 @@ inherit cross
 
 NAME="mingw64-x86_64-libmspub0.1"
 VERSION=0.1.2
-RELEASE=1
+RELEASE=2
 CATEGORY="Devel"
 SUMMARY="MS Publisher format library for Win64 toolchain"
 DESCRIPTION="Libmspub is library providing ability to interpret and import
